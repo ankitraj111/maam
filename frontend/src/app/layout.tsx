@@ -7,6 +7,7 @@ import { siteConfig } from '@/lib/config';
 import { LanguageProvider } from '@/context/LanguageContext';
 import { ThemeProvider } from '@/context/ThemeContext';
 import { GoogleTranslateBridge } from '@/components/ui/GoogleTranslateBridge';
+import { WhatsAppFloat } from '@/components/ui/WhatsAppFloat';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -72,6 +73,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />
+            <WhatsAppFloat />
           </LanguageProvider>
         </ThemeProvider>
       </body>

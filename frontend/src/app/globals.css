@@ -69,6 +69,10 @@
   .card-hover { @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl; }
   .card-shadow { box-shadow: 0 4px 6px -1px rgba(11,25,56,0.08), 0 2px 4px -1px rgba(11,25,56,0.05); }
 
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#25D366] text-white font-semibold rounded-lg transition-all duration-200 hover:bg-[#20bc5a] hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 cursor-pointer;
+  }
+
   /* Dark mode overrides for utility classes */
   .dark .btn-outline {
     @apply border-teal-400 text-teal-300 hover:bg-teal-500 hover:text-white hover:border-teal-500;
